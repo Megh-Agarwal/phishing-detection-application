@@ -1,0 +1,34 @@
+{
+  "name": "phishing-detection-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Megh-Agarwal/phishing-detection-application.git"
+  },
+  "author": "Megh Agarwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Megh-Agarwal/phishing-detection-application/issues"
+  },
+  "homepage": "https://github.com/Megh-Agarwal/phishing-detection-application#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "hbs": "^4.2.0",
+    "helmet": "^5.1.0",
+    "nodemon": "^2.0.19",
+    "uglify-js": "^3.16.2"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}

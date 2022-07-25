@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{>head}}
+    <body>
+        <!-- Background Video-->
+        <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="/mp4/background.mp4" type="video/mp4" />
+        </video>
+        <!-- Masthead-->
+        <div class="masthead">
+            <div class="masthead-content text-white">
+                <div class="container-fluid px-4 px-lg-0">
+                    <h1 class="fst-italic lh-1 mb-4">Calculate the probability that a URL is phishing!</h1>
+                    <p class="mb-5">
+                        Type in the URL address to calculate the probability that a URL is phishing! This is via a ML Model. Please read the <a href="https://www.ijser.org/onlineResearchPaperViewer.aspx?Estimating_the_Phishing_Non_phishing_Probability_of_a_URL_using_a_Tree_based_Ensemble_Model.pdf" target="_blank">research paper</a> for in depth information.  
+                    </p>
+                    <div class="row input-group-newsletter mb-5">
+                        <div class="col">
+                            <input class="form-control" id="url" type="text" placeholder="Enter url address..." aria-label="Enter url address..." />
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-primary" id="calculateProbability" type="button">
+                                Calculate!
+                            </button>
+                        </div>
+                    </div>
+                    <p class="mb-5" style="display: none;" id="calculatedProbabilityPara">
+                        The probability that the input URL is phishing is <span id="calculatedProbability"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Core theme JS-->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/pnotify.min.js"></script>
+        <script src="/js/custom/config.js"></script>
+        <script src="/js/loader.js"></script>
+        <script src="/js/custom/scripts.js"></script>
+    </body>
+</html>
