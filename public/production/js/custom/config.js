@@ -1,1 +1,1 @@
-const modelApi = "http://127.0.0.1:8000";
+const modelApi = "https://phishing-model-api.herokuapp.com";
